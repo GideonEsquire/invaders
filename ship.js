@@ -22,5 +22,4 @@ function Ship() {
             this.x = width - 20;
         }
     }
-
 }

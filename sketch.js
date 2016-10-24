@@ -7,7 +7,9 @@ function setup() {
     createCanvas(640, 480);
     ship = new Ship();
     for (var i = 0; i < 12; i++) {
-        flowers[i] = new Flower((i*40 + 80), 80);
+        for (var j = 0; j < 3; j++) {
+            flowers.push(new Flower((i*40 + 80), j*40 + 80));
+        }
     }
 }
 

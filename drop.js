@@ -18,14 +18,10 @@ function Drop(x, y) {
 
     this.hits = function(flower) {
         var d = dist(this.x, this.y, flower.x, flower.y);
-        if (d < this.r + flower.r) {
-            return true;
-        } else {
-            return false;
-        }
+        return d < this.r + flower.r
     }
 
     this.move = function() {
-        this.y = this.y - 5;
+        this.y = this.y - 4;
     }
 }
